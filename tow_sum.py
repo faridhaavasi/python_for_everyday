@@ -12,4 +12,15 @@ for index, value in enumerate(l):
         if value + l[i] == target:
             print(index,i)
 
+'''
+big o ----> o(n)
+
+'''
+d = dict()
+
+for index, value in enumerate(l):
+    if value in d:
+        print(d[value], index)
+    else:
+        d[target-value] = index     
 
